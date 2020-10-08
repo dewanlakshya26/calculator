@@ -10,7 +10,7 @@ import java.util.Arrays;
 @Component
 public class BODMASHUtility {
 
-    Logger logger = LoggerFactory.getLogger(BODMASHUtility.class);
+    private Logger logger = LoggerFactory.getLogger(BODMASHUtility.class);
 
     public int doAddition(int[] array) {
         logger.info("performing addition");

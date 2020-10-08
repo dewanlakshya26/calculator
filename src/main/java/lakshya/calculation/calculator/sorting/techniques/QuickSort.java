@@ -24,7 +24,6 @@ public class QuickSort implements SortingExecutor {
             if (arr[j] < pivot) {
                 i++;
 
-
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;

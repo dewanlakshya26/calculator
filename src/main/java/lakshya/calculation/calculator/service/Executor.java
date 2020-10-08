@@ -6,9 +6,6 @@ import lakshya.calculation.calculator.utility.BODMASHUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 @Service
 public class Executor {
 
@@ -45,7 +42,7 @@ public class Executor {
             }
         } else return performSorting(calculator);
 
-        return new int[]{result[0]} ;
+        return new int[]{result[0]};
     }
 
     private int[] performSorting(Calculator calculator) {
