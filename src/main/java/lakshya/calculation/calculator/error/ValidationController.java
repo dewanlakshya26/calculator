@@ -16,7 +16,7 @@ public class ValidationController {
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     ResponseEntity<String> handleConstraintViolationException(HttpMessageNotReadableException e) {
-        logger.info("validation exception occoured");
+        logger.error("validation exception occoured");
         return new ResponseEntity<>("not valid due to validation error: " + e.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }
